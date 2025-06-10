@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_registrar"
+            android:icon="@drawable/outline_add_circle_24"
+            android:title="@string/menu_registrar" />
+
+        <item
+            android:id="@+id/nav_modificar"
+            android:icon="@drawable/outline_account_circle_24"
+            android:title="@string/menu_modificar" />
+
+        <item
+            android:id="@+id/nav_eliminar"
+            android:icon="@drawable/outline_cancel_24"
+            android:title="@string/menu_eliminar" />
+
+        <item
+            android:id="@+id/nav_reg_ubicacion"
+            android:icon="@drawable/outline_add_location_24"
+            android:title="@string/menu_reg_ubicacion" />
+
+        <item
+            android:id="@+id/nav_listar_personas"
+            android:icon="@drawable/outline_assignment_24"
+            android:title="@string/menu_listar_personas" />
+
+        <item
+            android:id="@+id/nav_buscar_persona"
+            android:icon="@drawable/outline_content_paste_search_24"
+            android:title="@string/menu_buscar_persona" />
+
+        <item
+            android:id="@+id/nav_ubicacion_personas"
+            android:icon="@drawable/outline_explore_nearby_24"
+            android:title="@string/menu_ubicacion_personas" />
+    </group>
+</menu>
