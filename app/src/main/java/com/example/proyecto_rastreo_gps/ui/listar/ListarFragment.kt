@@ -6,11 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyecto_rastreo_gps.databinding.FragmentListarBinding
 import com.example.proyecto_rastreo_gps.ui.PostApiService
+import com.example.proyecto_rastreo_gps.ui.registrar.RegistrarViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -35,7 +38,15 @@ class ListarFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val listarViewModel =
+            ViewModelProvider(this).get(ListarViewModel::class.java)
+
         _binding = FragmentListarBinding.inflate(inflater, container, false)
+
+        val textView: TextView = binding.textListar
+        listarViewModel.text.observe(viewLifecycleOwner){
+            textView.text = it
+        }
         return binding.root
     }
 

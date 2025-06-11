@@ -9,7 +9,7 @@
         android:id="@+id/tvCodCli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CodCli: 00"
+        android:text="Codcli"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
