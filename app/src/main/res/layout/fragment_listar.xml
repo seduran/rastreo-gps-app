@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="Ru"
-        android:textColor="#F85F6A" />
+        android:textColor="#00A1E4" />
 
     <EditText
         android:id="@+id/editTextText1"

@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".ui.eliminar.EliminarFragment">
+    tools:context=".ui.buscar.BuscarFragment">
 
     <TextView
-        android:id="@+id/text_eliminar"
+        android:id="@+id/text_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -22,25 +22,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:text="Ru"
-        android:textColor="#00A1E4" />
-
-    <EditText
-        android:id="@+id/editTextText1"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="18dp"
-        android:ems="10"
-        android:hint="Registro universitario"
-        android:inputType="number" />
 
     <TextView
         android:id="@+id/textView2"
@@ -66,16 +47,12 @@
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="50dp"
-        android:text="Eliminar" />
+        android:layout_marginBottom="10dp"
+        android:text="Buscar" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:text=""
-        android:textAlignment="center"
-        android:textColor="#2783E9" />
+    <org.osmdroid.views.MapView android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false" />
 
 </LinearLayout>

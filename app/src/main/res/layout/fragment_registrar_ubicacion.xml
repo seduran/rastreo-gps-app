@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="Ru"
-        android:textColor="#F85F6A" />
+        android:textColor="#00A1E4" />
 
     <EditText
         android:id="@+id/editTextText1"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="Cod. Cliente"
-        android:textColor="#F85F6A" />
+        android:textColor="#00A1E4" />
 
     <EditText
         android:id="@+id/editTextText2"
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="Latitud"
-        android:textColor="#F85F6A" />
+        android:textColor="#00A1E4" />
 
     <EditText
         android:id="@+id/editTextText3"
@@ -78,7 +78,9 @@
         android:layout_marginBottom="18dp"
         android:ems="10"
         android:hint="Latitud de la ubicación"
-        android:inputType="numberDecimal|numberSigned" />
+        android:inputType="numberDecimal|numberSigned"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <TextView
         android:id="@+id/textView4"
@@ -86,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:text="Longitud"
-        android:textColor="#F85F6A" />
+        android:textColor="#00A1E4" />
 
     <EditText
         android:id="@+id/editTextText4"
@@ -97,7 +99,9 @@
         android:layout_marginBottom="30dp"
         android:ems="10"
         android:hint="Longitud de la ubicación"
-        android:inputType="numberDecimal|numberSigned" />
+        android:inputType="numberDecimal|numberSigned"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <Button
         android:id="@+id/button"

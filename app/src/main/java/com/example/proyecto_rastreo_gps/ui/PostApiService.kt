@@ -13,6 +13,12 @@ interface PostApiService {
     @GET("/api/client/{ru}")
     suspend fun getListaClientes(@Path("ru") ru:String): Response<ListaModelResponse>
 
+    @GET("/api/location/{codcli}")
+    suspend fun getUbicacionPersona(@Path("codcli") codCli:String): Response<UbicacionModelResponse>
+
+    @GET("/api/location/all/{ru}")
+    suspend fun getUbicacionTodos(@Path("ru") ru:String): Response<UbicacionTodosResponse>
+
     @Headers("Content-type: application/json; charset=UTF-8")
     @POST("api/client")
     suspend fun addDatos(@Body obj:PersonaModelRequest): Response<PersonaModelResponse>

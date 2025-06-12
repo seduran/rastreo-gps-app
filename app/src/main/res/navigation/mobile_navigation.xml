@@ -12,18 +12,6 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.proyecto_rastreo_gps.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.proyecto_rastreo_gps.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
-    <fragment
         android:id="@+id/nav_registrar"
         android:name="com.example.proyecto_rastreo_gps.ui.registrar.RegistrarFragment"
         android:label="@string/menu_registrar"
@@ -52,4 +40,16 @@
         android:name="com.example.proyecto_rastreo_gps.ui.listar.ListarFragment"
         android:label="@string/menu_listar_personas"
         tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/nav_buscar_persona"
+        android:name="com.example.proyecto_rastreo_gps.ui.buscar.BuscarFragment"
+        android:label="@string/menu_buscar_persona"
+        tools:layout="@layout/fragment_buscar" />
+
+    <fragment
+        android:id="@+id/nav_ubicacion_personas"
+        android:name="com.example.proyecto_rastreo_gps.ui.buscarTodos.BuscarTodosFragment"
+        android:label="@string/menu_ubicacion_personas"
+        tools:layout="@layout/fragment_buscar_todos" />
 </navigation>

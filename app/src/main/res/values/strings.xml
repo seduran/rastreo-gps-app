@@ -17,4 +17,6 @@
     <string name="menu_listar_personas">Listar Personas</string>
     <string name="menu_buscar_persona">Buscar Persona</string>
     <string name="menu_ubicacion_personas">Ubicación Personas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
